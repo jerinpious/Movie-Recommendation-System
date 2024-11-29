@@ -3,6 +3,12 @@ import pickle
 import pandas as pd
 
 def recommend(movie):
+    movie_index = movies_list[movies_list['title']==movie].index[0]
+    distances = similarity[movie_index]
+    movies_list = sorted(list(enumerate(distances)),reverse=True,key=lambda x:x[1])[1:6]
+
+    for i in movies_list:
+        print(movies_list.iloc[i[0]].title)
     return
 
 movies_list = pickle.load(open('./data/movies.pkl','rb'))
