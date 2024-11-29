@@ -5,6 +5,11 @@ This project is a **content-based movie recommendation system** built using Pyth
 - Data Source: [Kaggle TMDb 5000 Dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
 ---
 
+## Screenshots
+![Project_image](img/ss_1.png)
+
+![Project_image](img/ss_2.png)
+
 ## Features
 
 - **Data Merging**: Combines information from two datasets (`tmdb_5000_movies.csv` and `tmdb_5000_credits.csv`) to create a unified database.
